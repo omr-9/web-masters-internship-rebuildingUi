@@ -47,6 +47,9 @@
          
         }
       }
+      .hero-img{
+      background-image: url(img/home3.jpg);
+      }
       .box {
         .box-img {
           width: 100%;

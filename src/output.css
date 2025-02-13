@@ -599,6 +599,10 @@ body {
   }
 }
 
+.hero-img{
+  background-image: url(img/home3.jpg);
+}
+
 .box {
   .box-img {
     width: 100%;
@@ -696,17 +700,8 @@ body {
   top: 5rem;
 }
 
-.left-20 {
-  left: 5rem;
-}
-
 .z-50 {
   z-index: 50;
-}
-
-.mx-auto {
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .mb-4 {
@@ -715,14 +710,6 @@ body {
 
 .mt-6 {
   margin-top: 1.5rem;
-}
-
-.ml-10 {
-  margin-left: 2.5rem;
-}
-
-.ml-48 {
-  margin-left: 12rem;
 }
 
 .block {
@@ -753,6 +740,10 @@ body {
   min-height: 100vh;
 }
 
+.w-\[120px\] {
+  width: 120px;
+}
+
 .w-\[300px\] {
   width: 300px;
 }
@@ -763,19 +754,6 @@ body {
 
 .w-full {
   width: 100%;
-}
-
-.w-\[\] {
-  width: ;
-}
-
-.w-\[120px\] {
-  width: 120px;
-}
-
-.w-fit {
-  width: -moz-fit-content;
-  width: fit-content;
 }
 
 .max-w-6xl {
@@ -893,10 +871,6 @@ body {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
 }
 
-.bg-\[url\(img\/home3\.jpg\)\] {
-  background-image: url(img/home3.jpg);
-}
-
 .bg-cover {
   background-size: cover;
 }
@@ -912,11 +886,6 @@ body {
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
-}
-
-.px-\[1\.4rem\] {
-  padding-left: 1.4rem;
-  padding-right: 1.4rem;
 }
 
 .py-20 {
@@ -957,6 +926,10 @@ body {
   font-size: 1.1rem;
 }
 
+.text-\[1rem\] {
+  font-size: 1rem;
+}
+
 .text-\[4rem\] {
   font-size: 4rem;
 }
@@ -971,10 +944,6 @@ body {
   line-height: 1.75rem;
 }
 
-.text-\[1rem\] {
-  font-size: 1rem;
-}
-
 .font-\[500\] {
   font-weight: 500;
 }
@@ -987,12 +956,12 @@ body {
   font-weight: 700;
 }
 
-.font-semibold {
-  font-weight: 600;
-}
-
 .font-bold {
   font-weight: 700;
+}
+
+.font-semibold {
+  font-weight: 600;
 }
 
 .uppercase {
@@ -1092,11 +1061,6 @@ body {
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
-.hover\:text-white:hover {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
-}
-
 @media (min-width: 768px) {
   .md\:static {
     position: static;
@@ -1138,10 +1102,6 @@ body {
 }
 
 @media (min-width: 1280px) {
-  .xl\:gap-10 {
-    gap: 2.5rem;
-  }
-
   .xl\:gap-\[5rem\] {
     gap: 5rem;
   }
