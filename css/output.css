@@ -558,8 +558,6 @@ html {
   scroll-behavior: smooth;
 }
 
-/* custom scroll bar */
-
 html::-webkit-scrollbar {
   width: 0.5rem;
   background-color:#020307;
@@ -600,7 +598,7 @@ body {
 }
 
 .hero-img{
-  background-image: url(img/home3.jpg);
+  background-image: url("../img/home3.jpg");
 }
 
 .box {
@@ -682,10 +680,6 @@ body {
 
 .absolute {
   position: absolute;
-}
-
-.relative {
-  position: relative;
 }
 
 .inset-0 {
@@ -842,14 +836,14 @@ body {
   border-color: #02030766;
 }
 
-.border-black {
-  --tw-border-opacity: 1;
-  border-color: rgb(0 0 0 / var(--tw-border-opacity, 1));
-}
-
 .border-mainColor {
   --tw-border-opacity: 1;
   border-color: rgb(255 44 31 / var(--tw-border-opacity, 1));
+}
+
+.border-black {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity, 1));
 }
 
 .bg-bgColor {
@@ -987,25 +981,19 @@ body {
   color: rgb(2 3 7 / var(--tw-text-opacity, 1));
 }
 
-.shadow {
-  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
 .outline-none {
   outline: 2px solid transparent;
   outline-offset: 2px;
 }
 
-.transition-all {
-  transition-property: all;
+.transition-colors {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
 
-.transition-colors {
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+.transition-all {
+  transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
@@ -1086,6 +1074,12 @@ body {
     flex-direction: row;
   }
 
+  .md\:space-y-0 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0px * var(--tw-space-y-reverse));
+  }
+
   .md\:border-none {
     border-style: none;
   }
@@ -1102,7 +1096,7 @@ body {
 }
 
 @media (min-width: 1280px) {
-  .xl\:gap-\[5rem\] {
+  .xl\:gap-20 {
     gap: 5rem;
   }
 }
